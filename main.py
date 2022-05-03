@@ -93,6 +93,7 @@ class LabelTool():
         self.parent.destroy()
     
     def loadData(self):
+        self.boxes:List[MyBox] = []
         self.filePath = filedialog.askopenfile().name
 
         self.oriImg = PImage.open(self.filePath)
